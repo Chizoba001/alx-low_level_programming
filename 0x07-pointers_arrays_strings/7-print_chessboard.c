@@ -1,23 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
-void print_chessboard(int n)
-{
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      if ((i + j) % 2 == 0) {
-        putchar('*');
-      } else {
-        putchar(' ');
-      }
-    }
-    putchar('\n');
-  }
-}
+/**
+ * print_chessboard - print the chessboard, 2d array
+ * @a: 2d array of chars
+ */
 
-int main()
+void print_chessboard(char (*a)[8])
 {
-  int n;
-  scanf("%d", &n);
-  print_chessboard(n);
-  return 0;
+	int y, x;
+
+	y = 0;
+	while (y < 8)
+	{
+		x = 0;
+		while (x < 8)
+		{
+			_putchar(a[y][x]);
+			x++;
+		}
+		_putchar('\n');
+		y++;
+	}
 }
