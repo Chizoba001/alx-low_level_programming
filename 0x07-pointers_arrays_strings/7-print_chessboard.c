@@ -1,13 +1,12 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * print_chessboard - print the chessboard, 2d array
- * @a: 2d array of chars
- */
+void _putchar(char c);
 
 void print_chessboard(char (*a)[8])
 {
 	int y, x;
+
+	void _putchar(char c);
 
 	y = 0;
 	while (y < 8)
