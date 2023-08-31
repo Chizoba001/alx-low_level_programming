@@ -1,1 +1,1 @@
-solution to 0x08.C recursion
+0x08. C - Recursion
