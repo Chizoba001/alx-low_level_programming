@@ -22,3 +22,4 @@ while (h != NULL)
   /* Returns the number of nodes in the list. */
 	return (count);
 }
+
